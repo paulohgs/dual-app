@@ -1,0 +1,28 @@
+{
+  "name": "dual-app",
+  "version": "1.0.0",
+  "description": "Ambiente desenvolvido para práticas laboratoriais utilizando o framework PattyFW.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/paulohgs/dual-app.git"
+  },
+  "keywords": [
+    "dual"
+  ],
+  "author": "Equipe.jpg",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/paulohgs/dual-app/issues"
+  },
+  "homepage": "https://github.com/paulohgs/dual-app#readme",
+  "Scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}

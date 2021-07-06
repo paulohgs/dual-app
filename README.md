@@ -79,7 +79,7 @@ Foram usadas as seguintes tecnologias no desenvolvimento do projeto:
 - [CSS3](#)
 - [Express](https://expressjs.com/pt-br/)
 - [Node.js](https://nodejs.org/en/)
-- [Javascript](https://www.javascript.com/)
+- [Javascript](https://developer.mozilla.org/en-US/docs/Web/javascript)
 
 Contribuidores
 =====
@@ -112,7 +112,7 @@ Contribuidores
 Autores
 =====
 
-<table align="center">
+<table align="center" border="0">
     <!-- AutorInicio -->
     <tr>
     <td align="center">
@@ -179,9 +179,9 @@ Autores
             </a>
             <br/>
             <br/>
-
-[![Linkedin Badge](https://img.shields.io/badge/-João-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://https://www.linkedin.com/in/#/)](https://www.linkedin.com/in/#/)
-[![Gmail Badge](https://img.shields.io/badge/-joaovm27@alu.ufc.br-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:joaovm27@alu.ufc.br)](mailto:joaovm27@alu.ufc.br)
+<!-- 
+[![Linkedin Badge](https://img.shields.io/badge/-João-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://https://www.linkedin.com/in/#/)](https://www.linkedin.com/in/#/) -->
+[![Gmail Badge](https://img.shields.io/badge/-Joaovm27@hotmail.com-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:Joaovm27@hotmail.com)](mailto:Joaovm27@hotmail.com)
         </td>
     </tr>
     <!-- AutorFim -->
