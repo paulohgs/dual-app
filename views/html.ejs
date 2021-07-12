@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    h1{
+        background-color: rgb(241, 226, 12);
+        padding: 0px 25px;
+        width: 99%;
+        position: relative;
+
+    }
+    p{
+        padding: 0px 25px;
+    }
+    form{
+        padding: 0px 25px;
+    }
+</style>    
+<body>
+    <h1 class="relative" height="37"> 
+        <p2 title="Sair"style="float:right;background-color: rgb(255,0,0);">X </p2>
+        <p2 title="Duvidas"style="float:right;color:white;">? </p2>
+        <img title ="Aluno"src="/public/Perfil.jpg" left="-200px" width="37" height="37"style="float:right;" alt="Usuario">
+        Dual   
+     </h1> 
+
+<p> Por favor insira sua atividade.</p>
+
+
+
+<form method="post" enctype="multipart/form-data" action="/upload">
+    <label for="fname">Nome do Aluno:</label><br>
+    <input type="text" id="fname" name="fname"><br>
+    <label for="lname">Nome da Atividade:</label><br>
+    <input type="text" id="lname" name="lname"><br><br>
+    <input type="file" name="file">
+    <input type="submit" value="enviar" >
+    
+</form>
+</body>
+</html>
