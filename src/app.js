@@ -26,8 +26,19 @@ app.post("/upload/",upload.single("file"),(req,res)=>{
     res.render("Dual_Upload.ejs");
 })
 
-app.get('/', (req, res) => {
-    res.send('Hello World')
+app.set('view engine', 'ejs');
+app.use(express.static(__dirname + '/public'));
+
+app.get('/', (req, res) => {    
+    res.render("index", {
+        title: 'Home'
+    })
+});
+
+app.use(function (req, res, next){
+    res.status(404).render("404", {
+        title: '404 - Página não encontrada'
+    });
 });
 
 module.exports = app;

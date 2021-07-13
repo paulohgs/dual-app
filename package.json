@@ -20,9 +20,13 @@
   },
   "homepage": "https://github.com/paulohgs/dual-app#readme",
   "Scripts": {
-    "start": "node app.js"
+    "start": "nodemon server.js"
   },
   "dependencies": {
+    "ejs": "^3.1.6",
     "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.9"
   }
 }
