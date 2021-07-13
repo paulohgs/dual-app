@@ -1,0 +1,16 @@
+#icons {
+    margin: 100px;
+}
+
+#icons a:link {
+    color: black;
+}
+
+#icons h3 {
+    padding: 10px;
+    text-align: center;
+}
+
+#icons svg:hover {
+    color: #70a288;
+}

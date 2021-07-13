@@ -51,6 +51,7 @@ typings/
 .npm
 
 uploads/
+downloads/
 
 # Optional eslint cache
 .eslintcache
@@ -104,3 +105,5 @@ dist
 
 # TernJS port file
 .tern-port
+
+

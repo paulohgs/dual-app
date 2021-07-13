@@ -1,8 +1,8 @@
 const express = require('express');
 const app = express();
+
 const multer = require("multer");
 const path = require("path")
-app.use(express.static('public'));
 
 app.set('view engine','ejs');
 
@@ -20,14 +20,33 @@ const storage = multer.diskStorage({
 const upload = multer({storage});
 
 app.get("/upload",(req,res) => {
-    res.render("html");
-})
-app.post("/upload/",upload.single("file"),(req,res)=>{
-    res.render("Dual_Upload.ejs");
+    res.render("upload", {
+        title: 'Dual - Upload'
+    });
 })
 
-app.get('/', (req, res) => {
-    res.send('Hello World')
+app.post("/upload/",upload.single("file"),(req,res)=>{
+    res.render("upload", {
+        title: 'Dual - Upload'
+    });
+})
+
+app.get('/', (req, res) => {    
+    res.render("home", {
+        title: 'Dual - Home'
+    })
+});
+
+app.get('/home', (req, res) => {
+    res.render("home", {
+        title: 'Dual - Home'
+    })
+})
+
+app.use(function (req, res, next){
+    res.status(404).render("404", {
+        title: '404 - Página não encontrada'
+    });
 });
 
 module.exports = app;
