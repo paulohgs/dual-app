@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>Dual - <%= title %> </title>
+    <%- include('../views/partials/head.ejs'); %>
+</head>
+
+<body>
+    <form class="form" action="upload">
+        <div class="card">
+            <div class="card-top">
+                <h2>DUAL</h2>
+            </div>
+            <div class="card-group">
+                <input type="text" name="username" placeholder="Usuário" required>
+            </div>
+            <div class="card-group">
+                <input type="password" name="password" placeholder="Senha" required>
+            </div>
+            <div class="card-group">
+                <a class="esqueceuSenha" href="/views/redefinirSenha.ejs">Esqueceu a senha?</a>
+            </div>
+            <div class="card-group">
+                <button type="submit">Login</button>
+            </div>
+        </div>
+    </form>
+</body>

@@ -32,8 +32,8 @@ app.post("/upload/",upload.single("file"),(req,res)=>{
 })
 
 app.get('/', (req, res) => {    
-    res.render("home", {
-        title: 'Dual - Home'
+    res.render("login", {
+        title: 'Dual - Login'
     })
 });
 
@@ -42,11 +42,17 @@ app.get('/home', (req, res) => {
         title: 'Dual - Home'
     })
 })
-
+app.get('/login', (req, res) =>{
+    res.render("login",{
+        title: 'Dual - Login'
+    });
+})
 app.use(function (req, res, next){
     res.status(404).render("404", {
         title: '404 - Página não encontrada'
     });
 });
+
+
 
 module.exports = app;
