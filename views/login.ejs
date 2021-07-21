@@ -7,23 +7,27 @@
 </head>
 
 <body>
+    <%- include('../views/partials/header.ejs');  %>
     <form class="form" action="upload">
-        <div class="card">
+        <div class="form-group card">
             <div class="card-top">
                 <h2>DUAL</h2>
             </div>
             <div class="card-group">
-                <input type="text" name="username" placeholder="Usuário" required>
+                <input class="form-control" type="text" name="username" placeholder="Usuário" required>
             </div>
             <div class="card-group">
-                <input type="password" name="password" placeholder="Senha" required>
+                <input class="form-control" type="password" name="password" placeholder="Senha" required>
             </div>
             <div class="card-group">
                 <a class="esqueceuSenha" href="/views/redefinirSenha.ejs">Esqueceu a senha?</a>
             </div>
             <div class="card-group">
-                <button type="submit">Login</button>
+                <button class="btn btn-dark" type="submit">Login</button>
             </div>
         </div>
     </form>
+    <%- include('../views/partials/footer.ejs'); %>
+    <%- include('../views/partials/bootstrap_js.ejs'); %>
 </body>
+</html>

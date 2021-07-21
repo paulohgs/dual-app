@@ -2,10 +2,6 @@
     margin: 100px;
 }
 
-#icons a:link {
-    color: black;
-}
-
 #icons h3 {
     padding: 10px;
     text-align: center;
@@ -14,3 +10,31 @@
 #icons svg:hover {
     color: #70a288;
 }
+
+#navbar-header svg {
+    color: white;
+    width: 32px;
+    height: 32px;
+    margin: 0px 15px;
+}
+
+a, a:valid, a:link {
+    color: #212529;
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+#page-404 {
+    
+    margin: 25px;
+    text-align: center;
+}
+
+
+footer {
+    margin: 10px;
+}
+

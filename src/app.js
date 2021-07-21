@@ -32,9 +32,7 @@ app.post("/upload/",upload.single("file"),(req,res)=>{
 })
 
 app.get('/', (req, res) => {    
-    res.render("login", {
-        title: 'Dual - Login'
-    })
+    res.redirect('home')
 });
 
 app.get('/home', (req, res) => {
@@ -42,10 +40,10 @@ app.get('/home', (req, res) => {
         title: 'Dual - Home'
     })
 })
-app.get('/login', (req, res) =>{
-    res.render("login",{
+app.get('/login', (req, res) => {
+    res.render('login', {
         title: 'Dual - Login'
-    });
+    })
 })
 app.use(function (req, res, next){
     res.status(404).render("404", {
