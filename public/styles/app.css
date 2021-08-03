@@ -34,7 +34,61 @@ body {
 }
 
 
-footer {
-    margin: 10px;
+.background-dark {
+    background-color: #15202B;
+    font-family: 'Open Sans', sans-serif;
+    color: #D0DCDC;
+    /* margin-top: 20vh;
+    margin-left: 10vh; */
 }
 
+#registerForm {
+    padding: 0 10em;
+}
+
+#formsLogin a {
+    color: #D0DCDC;
+    text-decoration: none;
+    text-decoration: underline;
+}
+
+.dualButton {
+    border: none;
+    background-color: #FFA400;
+    /* font-family: 'Libre Baskerville', serif; */
+}
+
+.dualButton:hover {
+    background-color: #FFA400;
+}
+
+#returnButton {
+    background-color: #FFD07F;
+}
+
+#coluna1 p {
+    margin-top: 25px;
+    margin-bottom: 0;
+    font-family: 'Libre Baskerville', serif;
+}
+
+#coluna1 a {
+    color: #D0DCDC;
+    text-decoration: none;
+    text-decoration: underline;
+    margin-top: 0;
+    padding-top: 0;
+    font-family: 'Libre Baskerville', serif;
+}
+
+#containerLogin {
+    margin-right: 25em;
+}
+
+.form-control {
+    border-radius: 15px;
+}
+
+.btn {
+    border-radius: 15px;
+}
