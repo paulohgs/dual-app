@@ -1,6 +1,9 @@
 <div align="center">
 
-# [Dual](https://github.com/paulohgs/dual-app)
+
+<a href="https://github.com/paulohgs/dual-app">
+    <img title="Dual" alt="Logo da aplicação Dual" src="public/dual-logo.svg">
+</a>
 
 ## Descrição do Projeto
 Ambiente desenvolvido para práticas laboratoriais utilizando o framework
@@ -17,9 +20,6 @@ Tabela de conteúdos
    * [Sobre](#sobre)
    * [Funcionalidades](#funcionalidades)
    * [Instalação](#instalação)
-   * [Como usar](#como-usar)
-      * [Pré-Requisitos](#pré-requisitos)
-   * [Testes](#testes)
    * [Tecnologias Utilizadas](#tecnologias)
 <!--te-->
 
@@ -35,51 +35,47 @@ Equipe
 Sobre
 =====
 
-<div align="center">
-    🚧 Em construção 🚧
-</div>
+<p>
+O Dual se trata de uma solução para alunos e professores das áreas relacionadas a eletrônica digital, sendo desenvolvido com a ajuda do framework <a href="https://github.com/wwagner33/pattyFW">PattyFW</a>. Buscando ajudar e integrar aluno, professor e laboratório de forma inteligente, com envio das atividades desenvolvidas <i>in locu</i> de forma facilitada para o professor.
+</p>
+
+### Cliente: [Wellington Wagner Ferreira Sarmento](https://github.com/wwagner33)
 
 Funcionalidades
 =====
 
-<div align="center">
-    🚧 Em construção 🚧
-</div>
+## Lista de requisitos funcionais a serem desenvolvidos:
+
+- [ ] RF_0001: Tela do aluno com envio da atividade.
+
+- [ ] RF_0002: Tela do professor com requisição de atividade para os alunos. 
+
+- [x] RF_0003: Tela de cadastro de usuários na plataforma.
+
+- [ ] RF_0004: Cadastro de usuário administrador no sistema.
+
+- [ ] RF_0005: Autenticação de usuário dentro do sistema.
+
+- [x] RF_0006: Tela de disciplina do aluno. 
+
+- [x] RF_0007: Tela de disciplina do professor.
 
 Instalação
 =====
 
-<div align="center">
-    🚧 Em construção 🚧
-</div>
-
-Como usar
-=====
-
-Pré-requisitos
------
-
-<div align="center">
-    🚧 Em construção 🚧
-</div>
-
-Testes
-=====
-
-<div align="center">
-    🚧 Em construção 🚧
-</div>
+- [Install on Ubuntu](install_ubuntu.md)
+- Install on Windows
 
 Tecnologias
 =====
 
 Foram usadas as seguintes tecnologias no desenvolvimento do projeto:
 
-- [HTML5](#)
-- [CSS3](#)
-- [Express](https://expressjs.com/pt-br/)
-- [Node.js](https://nodejs.org/en/)
-- [Javascript](https://developer.mozilla.org/en-US/docs/Web/javascript)
+- HTML5
+- CSS3
+- Express
+- Node.js
+- Javascript
 
 Contribuidores
 =====
