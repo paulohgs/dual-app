@@ -55,6 +55,7 @@ app.get('/login', (req, res) => {
         title: 'Dual - Login'
     })
 })
+<<<<<<< HEAD
 app.get('/cadastro', (req, res) => {
     res.render('register', {
         title: 'Dual - Cadastro'
@@ -62,6 +63,12 @@ app.get('/cadastro', (req, res) => {
 })
 
 app.use((req, res, next) => {
+=======
+app.get('/atividades',(req, res) =>{
+    res.render("atividades", {title: 'Dual - Atividades'});
+})
+app.use(function (req, res, next){
+>>>>>>> origin/requisito_rf0007
     res.status(404).render("404", {
         title: '404 - Página não encontrada'
     });
