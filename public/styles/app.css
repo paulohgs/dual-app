@@ -25,6 +25,7 @@ a, a:valid, a:link {
 
 body {
     font-family: 'Open Sans', sans-serif;
+    background-color: white;
 }
 
 #page-404 { 
