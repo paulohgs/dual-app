@@ -45,6 +45,9 @@ app.get('/login', (req, res) => {
         title: 'Dual - Login'
     })
 })
+app.get('/atividades',(req, res) =>{
+    res.render("atividades", {title: 'Dual - Atividades'});
+})
 app.use(function (req, res, next){
     res.status(404).render("404", {
         title: '404 - Página não encontrada'

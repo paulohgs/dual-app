@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>Dual - <%= title %> </title>
+    <%- include('../views/partials/head.ejs'); %>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <!-- header -->
+    <%- include('../views/partials/header.ejs'); %>
+    <!-- /header -->
+    <div class="container-fluid">
+        <h3 class="disciplinas-title">Disciplina 1 - Atividades</h3>
+        <row class="d-flex justify-content-center">
+            <div class="container-navigation">
+                <div class="d-flex justify-content-start">
+                    <div class="col-md-auto">
+                        <button class="btn btn-warning" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne"
+                            aria-expanded="false" aria-controls="flush-collapseOne" type="button">Abertas</button>
+                    </div>
+                    <div class="col-md-auto">
+                        <button class="btn btn-warning" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo"
+                            aria-expanded="false" aria-controls="flush-collapseTwo" type="button">Futuras</button>
+                    </div>
+                    <div class="col-md-auto">
+                        <button class="btn btn-warning" type="button" data-bs-toggle="collapse"
+                            data-bs-target=".accordion-collapse" aria-expanded="false"
+                            aria-controls="flush-collapseTwo flush-collapseOne"
+                            aria-controls="flush-collapseOne">Todas</button>
+                    </div>
+                    <div class="col-5">
+                        <row class="d-flex justify-content-end">
+                            <form class="d-flex justify-content-end">
+                                <input class="form-control me-2" type="search" placeholder="Pesquisar em Disciplinas"
+                                    aria-label="Search">
+                            </form>
+                        </row>
+                    </div>
+                </div>
+            </div>
+        </row>
+        <row>
+            <div class="d-flex justify-content-center">
+                <div class="accordion accordion-flush" id="accordionFlushExample">
+                    <div class="accordion-item" id="abertas">
+                        <h4 class="accordion-header" id="flush-headingOne">
+                            Abertas
+                        </h4>
+                        <div id="flush-collapseOne" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                Aqui ficara as atividades Abertas
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item" id="fechadas">
+                        <h4 class="accordion-header" id="flush-headingTwo">
+                            Futuras
+                        </h4>
+                        <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                Aqui as atividades Fechadas
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </row>
+        <footer>
+            <%- include('../views/partials/footer.ejs'); %>
+        </footer>
+        <!-- footer -->
+
+        <%- include('../views/partials/bootstrap_js.ejs'); %>
+</body>
+
+</html>
