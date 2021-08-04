@@ -92,3 +92,23 @@ body {
 .btn {
     border-radius: 15px;
 }
+
+#bordaDisciplina{
+    border-radius: 10px;
+    background: #040608;
+    width: 1500px;
+    height: 60px; 
+    position: relative;
+    top: 153px;
+    left: 311px;
+}
+#bordaAnotações{
+    border-radius: 10px;
+    color: white;
+    background: #040608;
+    width: 400px;
+    height: 30px; 
+    margin-top: 100px; 
+    margin-left: 1411px;
+    text-align: center;
+}

@@ -38,6 +38,12 @@ app.get('/', (req, res) => {
     res.redirect('home')
 });
 
+app.get('/pagina_inicial', (req, res) => {    
+    res.render("pag_inicial", {
+        title: 'Dual - PaginaInicial'
+    })
+});
+
 app.get('/home', (req, res) => {
     res.render("home", {
         title: 'Dual - Home'

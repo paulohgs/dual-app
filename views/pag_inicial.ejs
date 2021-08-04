@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Dual - <%= title %> </title>
+    <%- include('../views/partials/head.ejs'); %>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+    
+     <!-- header -->
+     <%- include('../views/partials/header.ejs'); %>
+     <!-- /header -->
+    <div class="container-fluid">
+    <div class="row">
+     <div  id="bordaDisciplina" class="col-sm-3 col-xs-12" >
+     </div>
+    </div>
+  </div>
+  <div class="container-fluid">
+    <div class="row">
+     <div class="col-sm-3 col-xs-12" >
+     <p style="position: relative; top: 53px;left: 311px;">Disciplinas</p>
+     </div>
+     </div>
+     </div>
+        <button class="btn btn-dark" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne"style="position: relative;left: 321px;top: 63px;">
+            Abertas
+          </button>
+        <button class="btn btn-dark" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo"style="position: relative;left: 351px;top: 63px;">
+            Fechadas
+          </button>
+        <button class="btn btn-dark" type="button" data-bs-toggle="collapse" data-bs-target=".accordion-collapse" aria-expanded="false" aria-controls="flush-collapseTwo flush-collapseOne" aria-controls="flush-collapseOne"style="position: relative;left: 371px;top: 63px;">
+            Todas
+          </button>
+    <p id="bordaAnotações">Anotações</p>
+
+
+    <div class="accordion accordion-flush" id="accordionFlushExample" style="width: 1000px; margin-top: -50px; margin-left: 311px;">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingOne">
+              Abertas
+          </h2>
+          <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample" >
+            <div class="accordion-body">
+                    Aqui ficara as atividades Abertas   
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingTwo">
+              Fechadas
+          </h2>
+          <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">Aqui as atividades Fechadas</div>
+          </div>
+        </div>
+      </div>
+
+
+    <!-- footer -->
+    <footer>
+        <%- include('../views/partials/footer.ejs'); %>
+    </footer>
+    <!-- footer -->
+
+    <%- include('../views/partials/bootstrap_js.ejs'); %>
+</body>
+</html>
