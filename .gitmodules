@@ -1,0 +1,3 @@
+[submodule "pattyFW"]
+	path = pattyFW
+	url = https://github.com/wwagner33/pattyFW.git

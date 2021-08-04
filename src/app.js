@@ -1,5 +1,8 @@
 const express = require('express');
 const app = express();
+const mongoose = require('mongoose')
+const Alma = require('../pattyFW/class/alma')
+const alma = new Alma()
 
 const multer = require("multer");
 const path = require("path")
@@ -32,9 +35,7 @@ app.post("/upload/",upload.single("file"),(req,res)=>{
 })
 
 app.get('/', (req, res) => {    
-    res.render("home", {
-        title: 'Dual - Home'
-    })
+    res.redirect('home')
 });
 
 app.get('/home', (req, res) => {
@@ -43,10 +44,23 @@ app.get('/home', (req, res) => {
     })
 })
 
-app.use(function (req, res, next){
+app.get('/login', (req, res) => {
+    res.render('login', {
+        title: 'Dual - Login'
+    })
+})
+app.get('/cadastro', (req, res) => {
+    res.render('register', {
+        title: 'Dual - Cadastro'
+    })
+})
+
+app.use((req, res, next) => {
     res.status(404).render("404", {
         title: '404 - Página não encontrada'
     });
 });
+
+
 
 module.exports = app;
