@@ -1,0 +1,38 @@
+<title><%= title %> </title>
+<%- include('../views/partials/head.ejs'); %>
+
+<body class="background-dark">
+        <div class="container-fluid">
+            <div class="row position-absolute top-50 start-50 translate-middle">
+                <div class="col-xs-12">
+                    <form action="redefinir-senha" method="POST" id="registerForm">
+                        <div class="row mb-3">
+                            <img src="../public/images/dual-logo.svg" alt="logo da aplicação dual" class="img-fluid">
+                        </div>
+                        <div class="row mb-3">
+                            <span class="spanForms">Redefinição de senha</span>
+                        </div>
+                        <div class="row mb-3">
+                            <input type="email" class="form-control" name="inputEmail" placeholder="Digite o e-mail cadastrado">
+                        </div>
+                        <div class="row mb-3">
+                            <button class="btn btn-light dualButton" type="submit" form="registerForm">Redefinir senha</button>
+                        </div>
+                        <div class="row mb-3">
+                            <a href="login">
+                                <div class="row mb-3">
+                                    <button id="returnButton" class="btn btn-light dualButton" type="button">Voltar</button>
+                                </div>
+                            </a>
+                        </div>
+
+                    </form>
+                </div>
+                
+                <%- include('../views/partials/footer.ejs'); %>
+            </div>
+
+        </div>
+
+        <%- include('../views/partials/bootstrap_js.ejs'); %>
+</body>

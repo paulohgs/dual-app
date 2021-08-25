@@ -2,22 +2,25 @@
 <%- include('../views/partials/head.ejs'); %>
 
 <body class="background-dark">
-        <div class="container-fluid">
-            <div class="row position-absolute top-50 start-50 translate-middle">
+        <div class="container d-flex justify-content-center  h-100">
+            <div class="row align-self-center">
                 <div class="col-xs-12">
                     
                     <form action="registrar" method="POST" id="registerForm">
                         <div class="row mb-3">
-                            <img src="../public/images/DUAL-logo1.png" alt="logo da aplicação dual" class="img-fluid">
+                            <img src="../public/images/dual-logo.svg" alt="logo da aplicação dual" class="img-fluid">
                         </div>
                         <div class="row mb-3">
-                            <input type="email" class="form-control" name="inputEmail" placeholder="Digite seu e-mail">
+                            <span class="spanForms">Cadastro de Usuário</span>
                         </div>
                         <div class="row mb-3">
-                            <input type="text" class="form-control" name="inputUser" placeholder="Digite seu usuário">
+                            <input type="email" class="form-control" name="email" placeholder="Digite seu e-mail">
                         </div>
                         <div class="row mb-3">
-                            <input type="password" class="form-control" name="inputPassword" placeholder="Digite sua senha">
+                            <input type="text" class="form-control" name="name" placeholder="Digite seu usuário">
+                        </div>
+                        <div class="row mb-3">
+                            <input type="password" class="form-control" name="password" placeholder="Digite sua senha">
                         </div>
                         <div class="row mb-3">
                             <input type="password" class="form-control" name="confirmPassword" placeholder="Confirme sua senha">

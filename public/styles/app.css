@@ -18,32 +18,25 @@
     margin: 0px 15px;
 }
 
-a, a:valid, a:link {
+.textDual {
+    font-family: 'Libre Baskerville', serif;
+}
+
+a,
+a:valid,
+a:link {
     color: #212529;
     text-decoration: none;
 }
 
 body {
     font-family: 'Open Sans', sans-serif;
-    background-color: white;
 }
-
-#page-404 { 
-    margin: 25px;
-    text-align: center;
-}
-
 
 .background-dark {
     background-color: #15202B;
     font-family: 'Open Sans', sans-serif;
     color: #D0DCDC;
-    /* margin-top: 20vh;
-    margin-left: 10vh; */
-}
-
-#registerForm {
-    padding: 0 10em;
 }
 
 #formsLogin a {
@@ -52,10 +45,15 @@ body {
     text-decoration: underline;
 }
 
+#formsLogin {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
 .dualButton {
     border: none;
     background-color: #FFA400;
-    /* font-family: 'Libre Baskerville', serif; */
 }
 
 .dualButton:hover {
@@ -66,25 +64,6 @@ body {
     background-color: #FFD07F;
 }
 
-#coluna1 p {
-    margin-top: 25px;
-    margin-bottom: 0;
-    font-family: 'Libre Baskerville', serif;
-}
-
-#coluna1 a {
-    color: #D0DCDC;
-    text-decoration: none;
-    text-decoration: underline;
-    margin-top: 0;
-    padding-top: 0;
-    font-family: 'Libre Baskerville', serif;
-}
-
-#containerLogin {
-    margin-right: 25em;
-}
-
 .form-control {
     border-radius: 15px;
 }
@@ -93,22 +72,40 @@ body {
     border-radius: 15px;
 }
 
-#bordaDisciplina{
+#bordaDisciplina {
     border-radius: 10px;
     background: #040608;
     width: 1500px;
-    height: 60px; 
+    height: 60px;
     position: relative;
     top: 153px;
     left: 311px;
 }
-#bordaAnotações{
+
+#bordaAnotações {
     border-radius: 10px;
     color: white;
     background: #040608;
     width: 400px;
-    height: 30px; 
-    margin-top: 100px; 
+    height: 30px;
+    margin-top: 100px;
     margin-left: 1411px;
     text-align: center;
+}
+
+.spanForms {
+    text-align: center;
+    font-family: 'Libre Baskerville', serif;
+}
+
+#pattyFW {
+    text-decoration: none;
+    color: D0DCDC;
+}
+
+#pattyFW:hover {
+
+    color: white;
+    text-decoration: underline;
+
 }
