@@ -2,10 +2,10 @@ const express = require('express')
 const router = express.Router()
 const Alma = require('../pattyFW/class/alma')
 const alma = new Alma()
+const User = require('../pattyFW/models/userModel');
 
 
-
-router.get('/', (req, res)=>{
+router.get('/', (req, res) => {
     res.render('login', {
         title: 'Dual - Login'
     })
@@ -29,14 +29,26 @@ router.get('/login', (req, res) => {
     })
 })
 
-router.post('/entrar', (req,res) => {
+router.post('/entrar', async (req, res) => {
+
     let data = {
         "user": req.body.user,
         "password": req.body.password
     }
-    const readUser = alma.read_user(data.user)
-    
-    res.redirect('/atividades')
+
+    if (!(data.user == "") && !(data.password == "")) {
+
+        let user = await User.findOne({name: data.user})
+
+        if (data.password == user.password) {
+            return res.redirect('/atividades')
+        } else {
+            return res.redirect(400, '/')
+        }
+    } else {
+        return res.redirect(400, '/')
+    }
+
 
 })
 
@@ -52,7 +64,7 @@ router.get('/redefinicao-de-senha', (req, res) => {
     })
 })
 
-router.post('/registrar', (req,res) => {
+router.post('/registrar', async (req, res) => {
 
     let data = {
         "name": req.body.name,
@@ -60,14 +72,23 @@ router.post('/registrar', (req,res) => {
         "password": req.body.password
     }
 
-    alma.create_a_user(data)
+    console.table(data)
 
-    res.redirect('/')    
+    if (!(data.user == "") && !(data.password == "") && !(data.email == "")) {
+        await alma.create_a_user(data);
+        return res.sendStatus(200);
+    } else {
+        var errors = 'teste'
+        return res.redirect(400, '/cadastro');
+
+    }
+
+    // res.redirect('/')    
 })
 
 
 
-router.get('/atividades', (req,res) =>{
+router.get('/atividades', (req, res) => {
     res.render('atividades', {
         title: 'Dual - Atividades'
     })

@@ -16,7 +16,7 @@ app.use(bodyParser.json())
 // configuração mongodb
 mongoose.Promise = global.Promise;
 const newLocal = { useNewUrlParser: true, useUnifiedTopology: true };
-mongoose.connect('mongodb://0.0.0.0:27017/dualapp', newLocal);
+mongoose.connect('mongodb://localhost:27017/dualapp', newLocal);
 
 const storage = multer.diskStorage({
     destination: function (req, file, cb) {
