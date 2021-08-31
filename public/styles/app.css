@@ -29,14 +29,37 @@ a:link {
     text-decoration: none;
 }
 
-body {
-    font-family: 'Open Sans', sans-serif;
-}
-
 .background-dark {
     background-color: #15202B;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Libre baskerville', serif;
     color: #D0DCDC;
+}
+
+.linksDual {
+    border-bottom: 1px solid #DEF4F7;
+}
+
+.linksDual a {
+    border: transparent;
+    color: #DEF4F7;
+    text-decoration: none;
+    border-radius: 15px;
+
+}
+
+.linksDual a:focus {
+    background-color: #FFA400;
+    color: #DEF4F7;
+}
+
+.linksDual a:hover {
+
+    background-color: #293B51;
+    border: transparent;
+    color: #D0DCDC;
+    text-decoration: none;
+    border-radius: 15px;
+
 }
 
 #formsLogin a {
@@ -54,6 +77,8 @@ body {
 .dualButton {
     border: none;
     background-color: #FFA400;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
 }
 
 .dualButton:hover {
@@ -108,4 +133,88 @@ body {
     color: white;
     text-decoration: underline;
 
+}
+
+.navSearch {
+    background-color: #DEF4F7;
+    padding: 0;
+    padding-left: 2px;
+    border-radius: 15px;
+}
+
+#firstContainer {
+    padding-top: 2rem;
+    padding-bottom: 0;
+}
+
+#breadChumb {
+    margin: 0;
+    padding: 0;
+    padding-left: 1rem;
+    font-size: 14px;
+}
+
+#navbarDual {
+    padding: 0 1rem 0 1rem;
+}
+
+.searchButton {
+
+    background-color: #DEF4F7;
+    color: #15202B;
+    padding: 0;
+    height: fit-content;
+
+}
+
+.searchBarDual {
+    background-color: #293B51;
+    color: #15202B;
+}
+
+.headerDual {
+    background-color: #293B51;
+}
+
+.acordeonDual {
+    background-color: #DEF4F7;
+    margin: 1rem;
+    padding: 2px;
+    border-radius: 50%;
+    color: #15202B;
+}
+
+.acordeonDual:hover {
+    background-color: #293B51;
+    text-decoration: none;
+    width: 30px;
+    height: 30px;
+    color: #DEF4F7;
+    border-radius: 10px;
+}
+
+#searchBar {
+    margin: 5px 1px;
+}
+
+.dualButtonLight {
+    background-color: #DEF4F7;
+    color: #15202B;
+}
+
+.dualButtonLight:hover {
+    background-color: #DEF4F7;
+    color: #15202B;
+}
+
+.dualButtonLight:focus {
+    background-color: #15202B;
+    color: #DEF4F7;
+}
+
+@media (min-width: 576px) {
+    .justify-content-center {
+        margin-left: 0;
+        width: 100%;
+    }
 }

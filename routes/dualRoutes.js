@@ -5,6 +5,7 @@ const alma = new Alma()
 const User = require('../pattyFW/models/userModel');
 
 
+
 router.get('/', (req, res) => {
     res.render('login', {
         title: 'Dual - Login'
@@ -41,7 +42,7 @@ router.post('/entrar', async (req, res) => {
         let user = await User.findOne({name: data.user})
 
         if (data.password == user.password) {
-            return res.redirect('/atividades')
+            return res.redirect('/aluno/disciplinas')
         } else {
             return res.redirect(400, '/')
         }
@@ -73,10 +74,11 @@ router.post('/registrar', async (req, res) => {
     }
 
     console.table(data)
+    const user = User.findOne({name: data.name})
 
-    if (!(data.user == "") && !(data.password == "") && !(data.email == "")) {
+    if (!(data.user == "") && !(data.password == "") && !(data.email == "") && !(data.name == user.name)) {
         await alma.create_a_user(data);
-        return res.sendStatus(200);
+        return res.redirect(200, '/login');
     } else {
         var errors = 'teste'
         return res.redirect(400, '/cadastro');

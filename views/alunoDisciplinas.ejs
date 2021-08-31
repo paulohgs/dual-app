@@ -1,0 +1,115 @@
+<title><%=title%></title>
+<%- include('../views/partials/head.ejs'); %>
+<header>
+    <%- include('../views/partials/header.ejs'); %>
+</header>
+
+<body class="background-dark">
+    <section>
+        <div class="container">
+            <div class="row" id="firstContainer">
+                <div class="col-lg-12">
+                    <div class="card-body" id="breadChumb">
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item active" aria-current="page">Todas as disciplinas</li>
+                            </ol>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-lg h-100">
+
+            <div class="row d-flex">
+                <div class="col-lg-9">
+
+                    <div class="card-body">
+                        <h3>
+                            Todas as suas disciplinas
+                        </h3>
+                    </div>
+
+                </div>
+                <div class="col-lg-3">
+                    <div class="card-body">
+                        <div class="navSearch">
+                            <form action="#" class="d-flex align-items-center" id="formDiv">
+                                <button class="btn searchButton" type="submit">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor"
+                                        class="bi bi-search" viewBox="0 0 16 16">
+                                        <path
+                                            d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                                    </svg>
+                                </button>
+                                <input class="form-control me-2" id="searchBar" type="search" aria-label="Search">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row d-flex">
+                <div class="col-lg-9">
+                    <ul class="nav linksDual">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">Active</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 linksDual"></div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-9">
+                    <div class="card-body w-100">
+                        <span>Cursando</span>
+                        <a href="#" class="acordeonDual">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor"
+                                class="bi bi-chevron-down" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="card-body w-100">
+                        <span>Cursadas</span>
+                        <a href="#" class="acordeonDual">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor"
+                                class="bi bi-chevron-down" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="card-body w-100">
+                        <span>Anotações</span>
+                        <a href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#DEF4F7"
+                                class="bi bi-plus-circle-fill" viewBox="0 0 16 16">
+                                <path
+                                    d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3v-3z" />
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="d-grid gap-2">
+                        <button class="btn btn-light dualButtonLight" type="button">Ver mais anotações</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>

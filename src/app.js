@@ -4,6 +4,7 @@ const mongoose = require('mongoose');
 const bodyParser = require('body-parser')
 
 const dualRoutes = require("../routes/dualRoutes")
+const alunoRoutes = require("../routes/alunoRoutes")
 const multer = require("multer");
 const path = require("path")
 
@@ -43,6 +44,7 @@ app.post("/upload/", upload.single("file"), (req, res) => {
     });
 })
 
+app.use('/aluno', alunoRoutes)
 app.use('/', dualRoutes)
 
 app.use((req, res, next) => {
