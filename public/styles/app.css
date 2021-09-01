@@ -77,7 +77,6 @@ a:link {
 .dualButton {
     border: none;
     background-color: #FFA400;
-    font-family: 'Montserrat', sans-serif;
     font-weight: 500;
 }
 
@@ -211,6 +210,27 @@ a:link {
     background-color: #15202B;
     color: #DEF4F7;
 }
+
+.cardAccordion {
+    background-color: #DEF4F7;
+    color: #15202B;
+}
+
+#textCardAccordion {
+    font-size: 12px;
+}
+
+/* .accordion-button {
+    background-color: #15202B;
+    color: #DEF4F7;
+    text-decoration-color: #DEF4F7;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: #15202B;
+    color: #DEF4F7;
+    text-decoration-color: #DEF4F7;
+} */
 
 @media (min-width: 576px) {
     .justify-content-center {

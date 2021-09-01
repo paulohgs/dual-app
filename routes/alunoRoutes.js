@@ -9,4 +9,14 @@ router.get('/disciplinas', (req, res) => {
     })
 })
 
+router.get('/atividades', (req, res) => {
+    res.render('atividadeAluno', {
+        title: 'Dual - Atividades'
+    })
+})
+
+router.post('/envio-atividade', (req,res) => {
+    res.redirect(200,'atividades')
+})
+
 module.exports = router

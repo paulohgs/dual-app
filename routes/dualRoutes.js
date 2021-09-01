@@ -19,9 +19,7 @@ router.get('/pagina_inicial', (req, res) => {
 });
 
 router.get('/home', (req, res) => {
-    res.render("home", {
-        title: 'Dual - Home'
-    })
+    res.redirect('/login')
 })
 
 router.get('/login', (req, res) => {
@@ -68,7 +66,7 @@ router.get('/redefinicao-de-senha', (req, res) => {
 router.post('/registrar', async (req, res) => {
 
     let data = {
-        "name": req.body.name,
+        "name": req.body.name,  
         "email": req.body.email,
         "password": req.body.password
     }
@@ -86,14 +84,6 @@ router.post('/registrar', async (req, res) => {
     }
 
     // res.redirect('/')    
-})
-
-
-
-router.get('/atividades', (req, res) => {
-    res.render('atividades', {
-        title: 'Dual - Atividades'
-    })
 })
 
 module.exports = router
