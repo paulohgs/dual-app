@@ -1,15 +1,23 @@
 const express = require('express');
 const app = express();
-const mongoose = require('mongoose')
-const Alma = require('../pattyFW/class/alma')
-const alma = new Alma()
+const mongoose = require('mongoose');
+const bodyParser = require('body-parser')
 
+const dualRoutes = require("../routes/dualRoutes")
+const alunoRoutes = require("../routes/alunoRoutes")
 const multer = require("multer");
 const path = require("path")
 
+// Configurações do servidor
 app.set('view engine', 'ejs');
-
 app.use('/public', express.static('public'));
+app.use(bodyParser.urlencoded({extended: true}))
+app.use(bodyParser.json())
+
+// configuração mongodb
+mongoose.Promise = global.Promise;
+const newLocal = { useNewUrlParser: true, useUnifiedTopology: true };
+mongoose.connect('mongodb://localhost:27017/dualapp', newLocal);
 
 const storage = multer.diskStorage({
     destination: function (req, file, cb) {
@@ -36,42 +44,10 @@ app.post("/upload/", upload.single("file"), (req, res) => {
     });
 })
 
-app.get('/', (req, res) => {
-    res.redirect('home')
-});
-
-app.get('/pagina_inicial', (req, res) => {
-    res.render("pag_inicial", {
-        title: 'Dual - PaginaInicial'
-    })
-});
-
-app.get('/home', (req, res) => {
-    res.render("home", {
-        title: 'Dual - Home'
-    })
-})
-
-app.get('/login', (req, res) => {
-    res.render('login', {
-        title: 'Dual - Login'
-    })
-})
-app.get('/cadastro', (req, res) => {
-    res.render('register', {
-        title: 'Dual - Cadastro'
-    })
-})
+app.use('/aluno', alunoRoutes)
+app.use('/', dualRoutes)
 
 app.use((req, res, next) => {
-    app.get('/atividades', (req, res) => {
-        res.render("atividades", {
-            title: 'Dual - Atividades'
-        });
-    })
-});
-
-app.use(function (req, res, next) {
     res.status(404).render("404", {
         title: '404 - Página não encontrada'
     });
