@@ -2,7 +2,7 @@
 
 
 <a href="https://github.com/paulohgs/dual-app">
-    <img title="Dual" alt="Logo da aplicação Dual" src="public/dual-logo.svg">
+    <img title="Dual" alt="Logo da aplicação Dual" src="public//images/dual-logo.svg">
 </a>
 
 ## Descrição do Projeto
