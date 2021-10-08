@@ -1,7 +1,6 @@
 const express = require('express');
 const app = express();
 const mongoose = require('mongoose');
-const bodyParser = require('body-parser')
 
 const dualRoutes = require("../routes/dualRoutes")
 const alunoRoutes = require("../routes/alunoRoutes")
@@ -10,9 +9,9 @@ const path = require("path")
 
 // Configurações do servidor
 app.set('view engine', 'ejs');
-app.use('/public', express.static('public'));
-app.use(bodyParser.urlencoded({extended: true}))
-app.use(bodyParser.json())
+app.use(express.static('public'));
+app.use(express.urlencoded({extended: true}))
+app.use(express.json())
 
 // configuração mongodb
 mongoose.Promise = global.Promise;
